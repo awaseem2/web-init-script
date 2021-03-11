@@ -1,0 +1,115 @@
+body {
+    background-color: #000;
+    color:#fff
+}
+
+.front-image {
+    margin-top: -20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.display-container {
+    background-color: #000000;
+}
+
+.display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.margin-top {
+    margin-top: 16px!important
+}
+
+.title-text-div {
+    text-align: center!important
+}
+
+.xxlarge-text {
+    font-size: 100px!important
+}
+
+.text-white {
+    color: #fff!important
+}
+
+.title-padding {
+    padding: 8px 16px!important
+}
+
+.text-black {
+    color: #fff!important;
+    background-color: #000!important
+}
+
+opacity-min.opacity-min {
+    opacity: 0.75
+}
+
+@media (max-width:600px) {
+    .hide-small-text {
+        display: none!important
+    }
+}
+
+.text-light-grey {
+    color: #f1f1f1!important;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.custom-button, .custom-button:hover {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    background-color: #f1f1f1;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    width: auto;
+    text-align: left;
+    padding: 8px 16px;
+}
+
+.custom-button:hover {
+    color: #000!important;
+    background-color: #ccc!important
+}
+
+.custom-block {
+    display: block;
+}
+
+h2 {
+    font-size: 50px;
+    color: #fff;
+}
+
+p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.success {
+    text-align: center;
+    font-size: 30px,
+}
+
+.success-image {
+    margin-top: -20px;
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
