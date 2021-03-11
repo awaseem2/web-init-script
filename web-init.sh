@@ -1,13 +1,19 @@
-if [ "$#" -ne 1 ]; then
+if [ "$#" -ne 2 ]; then
     echo "Illegal number of parameters"
-    echo "Usage: sh web-init.sh [name of repo]"
+    echo "Usage: sh web-init.sh [name of repo] [public/private]"
+    exit 2
+fi
+
+if [ $2 != "public" ] && [ $2 != "private" ]; then
+    echo "Second word must be public or private."
+    echo "Usage: sh web-init.sh [name of repo] [public/private]"
     exit 2
 fi
 
 cd ..
 
 # create github repo
-gh repo create $1 --confirm --private
+gh repo create $1 --confirm --$2
 
 # create style folder
 mkdir $1/style
